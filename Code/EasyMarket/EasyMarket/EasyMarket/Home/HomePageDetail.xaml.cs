@@ -17,23 +17,7 @@ namespace EasyMarket
         public HomePageDetail()
         {
             InitializeComponent();
-
-            //var map = new Map(MapSpan.FromCenterAndRadius(new Position(36.8961, 10.1865), Distance.FromKilometers(0.5)))
-            //{
-            //    IsShowingUser = true,
-            //    VerticalOptions = LayoutOptions.FillAndExpand
-            //};
-
-            //var position1 = new Position(36.8961, 10.1865);
-
-            //var pin1 = new Pin
-            //{
-            //    Type = PinType.Place,
-            //    Position = position1,
-            //    Label = "First Marker",
-            //    Address = "www.google.com"
-            //};
-
+            
             var map = new Map(
             MapSpan.FromCenterAndRadius(
                     new Position(37, -122), Distance.FromMiles(0.3)))
@@ -54,6 +38,8 @@ namespace EasyMarket
             };
             map.Pins.Add(pin);
 
+            map.MapType = MapType.Street;
+            
             var slider = new Slider(1, 18, 1);
             slider.ValueChanged += (sender, e) => {
                 var zoomLevel = e.NewValue; // between 1 and 18

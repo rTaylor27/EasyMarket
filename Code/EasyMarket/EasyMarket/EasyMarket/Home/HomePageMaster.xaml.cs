@@ -17,7 +17,7 @@ namespace EasyMarket
     {
         public ListView ListView => ListViewMenuItems;
         public Image image = new Image { Source = "header.png" };
-
+     
         public HomePageMaster()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace EasyMarket
             {
                 MenuItems = new ObservableCollection<HomePageMenuItem>(new[]
                 {
-                    new HomePageMenuItem { Id = 0, Title = "Payment", Icon = "creditcard128.png" },
+                    new HomePageMenuItem { Id = 0, Title = "Payment", Icon = "creditcard128.png", TargetType = typeof(Pages.Payment) },
                     new HomePageMenuItem { Id = 1, Title = "Profile", Icon = "profile128.png" },
                     new HomePageMenuItem { Id = 2, Title = "Buy", Icon = "buy128.png" },
                     new HomePageMenuItem { Id = 3, Title = "Rides", Icon = "rides128.png" },

@@ -11,53 +11,6 @@
             ItemsSource="{Binding MenuItems}"
             SeparatorVisibility="None">
             <ListView.Header>
-                <!--<Grid BackgroundColor="#991911">-->
-                <!--<Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="10" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="10" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30" />
-                        <RowDefinition Height="80" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="10" />
-                    </Grid.RowDefinitions>
-                    <Image
-                        Grid.Row="0"
-                        Grid.Column="10"
-                        Source="header.png" />
-                    <Label
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        Style="{DynamicResource SubtitleStyle}"
-                        Text="EasyMarket" />
-                </Grid>-->
-                <!--<Grid>
-
-                -->
-                <!--<Image
-                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
-                                                                               Property=Height,
-                                                                               Factor=.5,
-                                                                               Constant=0}"
-                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
-                                                                              Property=Width,
-                                                                              Factor=.5,
-                                                                              Constant=0}"
-                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
-                                                                          ElementName=redBox,
-                                                                          Property=X,
-                                                                          Factor=1,
-                                                                          Constant=20}"
-                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
-                                                                          ElementName=redBox,
-                                                                          Property=Y,
-                                                                          Factor=1,
-                                                                          Constant=20}"
-                        Source="user128.png" />-->
-                <!--
-                </Grid>-->
                 <Image Source="header.png" />
             </ListView.Header>
             <ListView.ItemTemplate>

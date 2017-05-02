@@ -75,8 +75,8 @@ C:\Users\rtayl\Desktop\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarke
 C:\Users\rtayl\Desktop\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\EasyMarket.Android.dll.mdb
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.Android.dll
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.Android.pdb
-C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.Android.apk
-C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.Android-Signed.apk
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\easymarket.android.apk
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\easymarket.android-Signed.apk
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.dll
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\FormsViewGroup.dll
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
@@ -111,7 +111,7 @@ C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\E
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\EasyMarket.Android.csprojResolveAssemblyReference.cache
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\EasyMarket.Android.dll
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\EasyMarket.Android.pdb
-C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\android\bin\EasyMarket.Android.apk
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\android\bin\easymarket.android.apk
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\icon.png
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable-xhdpi\icon.png
@@ -128,6 +128,8 @@ C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\E
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\buy128.png
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\main.png
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\user128.png
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\creditcard2128.png
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\res\drawable\cash128.png
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\R.cs.flag
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\obj\Debug\uploadflags.txt
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket.Android\bin\Debug\EasyMarket.Android.dll.mdb

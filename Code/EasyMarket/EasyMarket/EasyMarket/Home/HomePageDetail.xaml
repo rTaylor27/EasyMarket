@@ -13,6 +13,5 @@
             IsShowingUser="true"
             MapType="Hybrid"
             WidthRequest="320" />-->
-
     </StackLayout>
 </ContentPage>

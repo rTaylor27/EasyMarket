@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EasyMarket.Pages.Payment"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Payment">
+    <ScrollView>
+        <StackLayout Spacing="60">
+            <Label
+                FontSize="25"
+                Text="Payment Methods"
+                TextColor="Gray" />
+            <StackLayout Padding="10">
+                <ListView
+                    x:Name="LVPaymentItems"
+                    x:Uid="LVPI"
+                    HasUnevenRows="true"
+                    ItemSelected="LVPaymentItems_ItemSelected"
+                    ItemsSource="{Binding MenuItems}"
+                    SeparatorVisibility="Default">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell
+                                ImageSource="{Binding Icon}"
+                                Text="{Binding Title}"
+                                TextColor="Gray" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button
+                    FontSize="25"
+                    Text="Add Card"
+                    TextColor="Black" />
+                <!--<Button Command="{Binding IncreaseCountCommand}" Text="Click Me" />
+            <Label Text="{Binding CountDisplay}" />-->
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
