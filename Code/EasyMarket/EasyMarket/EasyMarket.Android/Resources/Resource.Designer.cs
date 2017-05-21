@@ -2479,8 +2479,8 @@ namespace EasyMarket.Droid
 			// aapt resource value: 0x7f0200d1
 			public const int mr_ic_play_light = 2130837713;
 			
-			// aapt resource value: 0x7f0200d6
-			public const int notification_template_icon_bg = 2130837718;
+			// aapt resource value: 0x7f0200d7
+			public const int notification_template_icon_bg = 2130837719;
 			
 			// aapt resource value: 0x7f0200d2
 			public const int profile128 = 2130837714;
@@ -2492,7 +2492,10 @@ namespace EasyMarket.Droid
 			public const int settings128 = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int user128 = 2130837717;
+			public const int user = 2130837717;
+			
+			// aapt resource value: 0x7f0200d6
+			public const int user128 = 2130837718;
 			
 			static Drawable()
 			{

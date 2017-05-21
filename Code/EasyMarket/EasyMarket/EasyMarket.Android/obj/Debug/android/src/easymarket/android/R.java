@@ -2846,11 +2846,12 @@ containing a value of this type.
         public static final int mr_ic_pause_light=0x7f0200cf;
         public static final int mr_ic_play_dark=0x7f0200d0;
         public static final int mr_ic_play_light=0x7f0200d1;
-        public static final int notification_template_icon_bg=0x7f0200d6;
+        public static final int notification_template_icon_bg=0x7f0200d7;
         public static final int profile128=0x7f0200d2;
         public static final int rides128=0x7f0200d3;
         public static final int settings128=0x7f0200d4;
-        public static final int user128=0x7f0200d5;
+        public static final int user=0x7f0200d5;
+        public static final int user128=0x7f0200d6;
     }
     public static final class id {
         public static final int action0=0x7f0a0096;

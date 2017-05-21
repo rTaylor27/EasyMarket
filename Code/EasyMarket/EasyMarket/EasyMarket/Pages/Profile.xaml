@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EasyMarket.Pages.Profile"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Profile">
+
+    <StackLayout
+        HorizontalOptions="Center"
+        Spacing="10"
+        VerticalOptions="Start">
+        <Image Source="user.png" />
+        <Grid
+            HorizontalOptions="Center"
+            RowSpacing="1"
+            VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="Medium"
+                Text="UserName:" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="Medium"
+                Text="LastName:" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                FontSize="Medium"
+                Text="Email:" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                FontSize="Medium"
+                Text="Nickname:" />
+            <Entry
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Roberto:" />
+            <Entry
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Taylor:" />
+            <Entry
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="taylor@asjlkf.com" />
+            <Entry
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="Taylor45" />
+        </Grid>
+        <Button
+            BackgroundColor="Green"
+            BorderColor="White"
+            Text="Save"
+            TextColor="White" />
+    </StackLayout>
+
+</ContentPage>

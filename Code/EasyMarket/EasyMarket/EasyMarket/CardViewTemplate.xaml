@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="EasyMarket.CardViewTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Frame
+        BackgroundColor="White"
+        HasShadow="True"
+        IsClippedToBounds="True">
+        <Frame.OutlineColor>
+            <OnPlatform
+                x:TypeArguments="Color"
+                Android="Gray"
+                iOS="Gray" />
+        </Frame.OutlineColor>
+        <Frame.Margin>
+            <OnPlatform
+                x:TypeArguments="Thickness"
+                Android="10"
+                iOS="10" />
+        </Frame.Margin>
+        <StackLayout Orientation="Horizontal">
+            <BoxView WidthRequest="4" Color="{Binding AlertColor}" />
+            <Grid
+                Padding="0"
+                BackgroundColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Start"
+                    Text="{Binding Title, Mode=TwoWay}"
+                    VerticalTextAlignment="Center">
+                    <Label.LineBreakMode>
+                        <OnPlatform
+                            x:TypeArguments="LineBreakMode"
+                            Android="NoWrap"
+                            iOS="TailTruncation" />
+                    </Label.LineBreakMode>
+                </Label>
+                <BoxView
+                    Grid.Row="1"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    Color="Gray" />
+                <Grid
+                    Grid.Row="2"
+                    Padding="4"
+                    BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="CardOwner" />
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="{Binding Owner, Mode=TwoWay}" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </Frame>
+</ContentView>

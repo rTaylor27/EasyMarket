@@ -33,7 +33,7 @@ namespace EasyMarket.Pages
             if (!item.Title.Equals("Cash"))
             {
                 var page = (Page)Activator.CreateInstance(item.TargetType);
-                page.Title = item.Title;
+                page.Title = "Add Credit Card";
                 Navigation.PushAsync(new NavigationPage(page));
             }
             else
@@ -51,7 +51,7 @@ namespace EasyMarket.Pages
             MenuItems = new ObservableCollection<BasicPageMenuItem>(new[]
             {
                     new BasicPageMenuItem { Id = 0, Title = "Cash", Icon = "cash128.png", TargetType = typeof(HomePage) },
-                    new BasicPageMenuItem { Id = 1, Title = "Credit Card", Icon = "creditcard2128.png" },
+                    new BasicPageMenuItem { Id = 1, Title = "Credit Card", Icon = "creditcard2128.png", TargetType = typeof(AddCard) },
                 });
         }
         public event PropertyChangedEventHandler PropertyChanged;
