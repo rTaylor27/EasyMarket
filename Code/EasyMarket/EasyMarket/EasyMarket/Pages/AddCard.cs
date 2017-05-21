@@ -15,8 +15,8 @@ namespace EasyMarket.Pages
             StackLayout MainPanel = new StackLayout
             {
                 Orientation = StackOrientation.Vertical,
-                Spacing = 60,
-                VerticalOptions = LayoutOptions.Start
+                Spacing = 40,
+                VerticalOptions = LayoutOptions.CenterAndExpand
             };
 
             StackLayout InputsPanel = new StackLayout
@@ -29,20 +29,20 @@ namespace EasyMarket.Pages
             StackLayout CardPanel = new StackLayout
             {
                 Orientation = StackOrientation.Vertical,
-                Spacing = 2,
+                Spacing = 10,
                 VerticalOptions = LayoutOptions.Center
             };
 
-            Label lbCardNumber = new Label
+            // Dictionary to get Country from color name.
+            Dictionary<string, string> dcCountry = new Dictionary<string, string>
             {
-                FontSize = 14,
-                HorizontalOptions = LayoutOptions.Start,
-                Text = "Card Number"
+                { "Costa Rica", "Costa Rica" }, { "Panama", "Panama" },
+                { "United States", "United States" }
             };
 
             Entry entCardNumber = new ExtendedEntry()
             {
-                Placeholder = "",
+                Placeholder = "Card Number",
                 HasBorder = true,
                 BorderColor = Color.Gray,
                 XAlign = TextAlignment.Center,
@@ -50,33 +50,60 @@ namespace EasyMarket.Pages
                 HorizontalOptions = LayoutOptions.Center
             };
 
-            Label lbCardMonth = new Label
+            DatePicker datePicker = new DatePicker
             {
-                FontSize = 14,
-                HorizontalOptions = LayoutOptions.Start,
-                Text = "MM/YY"
-            };
-
-            Entry entDate = new ExtendedEntry()
-            {                
-                Placeholder = "",
-                HasBorder = true,
-                BorderColor = Color.Gray,
-                XAlign = TextAlignment.Center,
-                WidthRequest = 300,
-                HorizontalOptions = LayoutOptions.Center
-            };
-
-            Label lbCardCode = new Label
-            {
-                FontSize = 14,
-                HorizontalOptions = LayoutOptions.Fill,
-                Text = "CVV"
-            };
+                Format = "D",
+                VerticalOptions = LayoutOptions.Center,
+                Date = DateTime.Today
+            };           
 
             Entry entCVV = new ExtendedEntry()
             {
-                Placeholder = "",
+                Placeholder = "CVV",
+                HasBorder = true,
+                BorderColor = Color.Gray,
+                XAlign = TextAlignment.Center,
+                WidthRequest = 300,
+                HorizontalOptions = LayoutOptions.Center
+            };                   
+            
+            Picker picker = new Picker
+            {
+                Title = "Country",
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            foreach (string colorName in dcCountry.Keys)
+            {
+                picker.Items.Add(colorName);
+            }
+
+            // Create BoxView for displaying picked Color
+            BoxView boxView = new BoxView
+            {
+                WidthRequest = 150,
+                HeightRequest = 150,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            //HANDLE THE EVENT.
+            picker.SelectedIndexChanged += (sender, args) =>
+            {
+                if (picker.SelectedIndex == -1)
+                {
+                    
+                }
+                else
+                {
+                    string strSelectedIndex = picker.Items[picker.SelectedIndex];
+                    string strValue = dcCountry[strSelectedIndex];
+                }
+            };
+
+            Entry entZIP = new ExtendedEntry()
+            {
+                Placeholder = "ZIP Code",
                 HasBorder = true,
                 BorderColor = Color.Gray,
                 XAlign = TextAlignment.Center,
@@ -84,13 +111,27 @@ namespace EasyMarket.Pages
                 HorizontalOptions = LayoutOptions.Center
             };
 
-            CardPanel.Children.Add(lbCardNumber);
-            CardPanel.Children.Add(entCardNumber);
-            CardPanel.Children.Add(lbCardMonth);
-            CardPanel.Children.Add(entDate);
-            CardPanel.Children.Add(lbCardCode);
+            CardPanel.Children.Add(entCardNumber);            
             CardPanel.Children.Add(entCVV);
+            CardPanel.Children.Add(entZIP);
+            CardPanel.Children.Add(datePicker);
+            CardPanel.Children.Add(new StackLayout
+            {
+                Spacing = 1,
+                Children =
+                {
+                    picker,
+                    boxView
+                }
+            });
+            
             InputsPanel.Children.Add(CardPanel);
+            InputsPanel.Children.Add(new Button
+            {
+                Text = "Add Card",
+                BackgroundColor = Color.Gray,
+                TextColor = Color.White
+            });
             MainPanel.Children.Add(InputsPanel);
             Content = MainPanel;
         }

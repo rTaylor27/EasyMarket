@@ -10,6 +10,9 @@
 	<uses-permission android:name="android.permission.INTERNET" />
 	<permission android:name="com.deg.blubcnmobl.droid.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
 	<uses-permission android:name="com.deg.blubcnmobl.droid.permission.MAPS_RECEIVE" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+	<uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+	<uses-permission android:name="android.permission.LOCATION_HARDWARE" />
 	<application android:label="EasyMarket.Android">
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB21IQgSleygNE0AGDEGgaGFZBI9W8E7tw" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />

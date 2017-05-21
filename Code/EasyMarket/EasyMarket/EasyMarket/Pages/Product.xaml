@@ -1,29 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Xamarin.Forms_CardView"
-             xmlns:view="clr-namespace:Xamarin.Forms_CardView.View;assembly=Xamarin.Forms_CardView"
-             xmlns:viewModel="clr-namespace:Xamarin.Forms_CardView.ViewModel;assembly=Xamarin.Forms_CardView"
-             x:Class="Xamarin.Forms_CardView.MainPage"
-             Title="CardView-Demo">
+<ContentPage
+    x:Class="Xamarin.Forms_CardView.Product"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Xamarin.Forms_CardView"
+    xmlns:view="clr-namespace:Xamarin.Forms_CardView.View;assembly=Xamarin.Forms_CardView"
+    xmlns:viewModel="clr-namespace:Xamarin.Forms_CardView.ViewModel;assembly=Xamarin.Forms_CardView"
+    Title="CardView-Demo">
     <ContentPage.BindingContext>
-        <viewModel:CardDataViewModel/>
+        <viewModel:CardDataViewModel />
     </ContentPage.BindingContext>
 
     <StackLayout Orientation="Vertical">
-        <Label Text="Xamarin Forms CardView Demo"
-               VerticalOptions="Start"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               BackgroundColor="Transparent"
-               HorizontalOptions="CenterAndExpand" />
-        <ListView x:Name="listView" SelectedItem="{Binding SelcetedItem,Mode=TwoWay}" 
-              RowHeight="120" 
-              ItemsSource="{Binding CardDataCollection}" >
+        <Label
+            BackgroundColor="Transparent"
+            HorizontalOptions="CenterAndExpand"
+            HorizontalTextAlignment="Center"
+            Text="Xamarin Forms CardView Demo"
+            VerticalOptions="Start"
+            VerticalTextAlignment="Center" />
+        <ListView
+            x:Name="listView"
+            ItemsSource="{Binding CardDataCollection}"
+            RowHeight="120"
+            SelectedItem="{Binding SelcetedItem, Mode=TwoWay}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <view:CardViewTemplate/>
+                        <view:CardViewTemplate />
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -43,5 +43,15 @@ C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\E
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\obj\Debug\EasyMarket.Pages.Profile.xaml.g.cs
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\obj\Debug\EasyMarket.Pages.Product.xaml.g.cs
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\obj\Debug\EasyMarket.CardViewTemplate.xaml.g.cs
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Mono.Android.dll
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.dll
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Mono.Android.xml
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.xml
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Plugin.Geolocator.Abstractions.xml
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Windows.Foundation.FoundationContract.winmd
+C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\obj\Debug\EasyMarket.dll.mdb
 C:\Users\rtayl\Desktop\Xamarin\Project - EasyMarket\Code\EasyMarket\EasyMarket\EasyMarket\bin\Debug\EasyMarket.dll.mdb
